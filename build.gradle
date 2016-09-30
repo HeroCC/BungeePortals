@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://hub.spigotmc.org/nexus/content/groups/public' }
+    maven { url 'https://maven.sk89q.com/repo/' }
+}
+
+dependencies {
+  compile group: 'org.bukkit', name: 'bukkit', version: '1.10-R0.1-SNAPSHOT' // Bukkit Core
+  compile group: 'com.sk89q.worldedit', name: 'worldedit-bukkit', version: '6.1.4-SNAPSHOT' // WorldEdit
+}
